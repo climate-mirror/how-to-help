@@ -28,7 +28,16 @@ so that you can chat with other members of Climate Mirror about approaches and g
 The URLs that need mirroring are listed in our [datasets repository](https://github.com/climate-mirror/datasets/issues).
 For those not familiar with using GitHub, each item there is an "issue" - a task that can be tracked. If you click to open each
 one, it will have additional details, and a comment thread to help you coordinate with anyone else working to mirror that
-dataset.
+dataset. You can filter datasets based on whether they still need mirrors using the labels attached to each issue. [See
+here for more information](https://github.com/climate-mirror/datasets/blob/master/labeling_datasets_in_issues.md)
+on the labels we use to help you sort datasets.
+
+Once you've identified a dataset you would like to mirror, comment on the issue indicating that you are in the process of
+downloading it. When you are done mirroring it (and have checked your mirror to make sure it's complete), comment again
+to indicate you have a complete mirror, and if it is available at a publicly accessible URL, please provide the URL as well.
+
+#### Technology
+
 
 #### Publicly accessible mirrors
 
