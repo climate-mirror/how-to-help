@@ -4,9 +4,8 @@ if you have suggestions or updates, feel free to edit it and submit a pull reque
 
 ## Mirroring Data
 ### Hosting or attending a DataRefuge Event
-The best way you can help with mirroring data is to work with our partners at [DataRefuge](http://www.ppehlab.org/datarefuge)
-by attending or hosting a Data Rescue event. These events involve gathering many volunteers into a space for a day or weekend
-in order to collectively copy data. DataRefuge provides a toolkit of information, including the roles each person plays in
+The best way you can help is by attending or hosting a Data Rescue event from our partners at [DataRefuge](http://www.ppehlab.org/datarefuge).
+These events gather many volunteers at a space for a day or weekend to collectively copy data. DataRefuge provides a toolkit of information, including the roles each person plays in
 archiving data. These events are excellent ways to participate because you get the advice of expert archivists and the quality
 of obtained data is high due to the procedures and toolkit they provide. 
 
@@ -15,9 +14,10 @@ of obtained data is high due to the procedures and toolkit they provide.
  but have questions, it's worth contacting DataRefuge at the link above.
  * If you are interested in attending an event, you can [see a listing of upcoming events here](http://www.ppehlab.org/datarefuge)
  
-### Mirroring Data from Home
-If you can't make it to a DataRefuge event and don't want to organize one on your own, getting involved with ClimateMirror
-at home is a great way to contribute. To do this, you should
+### Mirroring Data from Home or Work
+If you can't make it to a DataRefuge event or organize an event yourself, you can contribute to ClimateMirror
+on your own. To do this, you should:
+
 1. Have some sort of large storage available (ideally publicly accessible)
 2. Have a decent working knowledge of using the Internet, including accessing FTP servers.
 
@@ -25,7 +25,19 @@ at home is a great way to contribute. To do this, you should
 Before you mirror data, you should sign up to [join our Slack team](https://climatemirrorslackinvite.herokuapp.com/)
 so that you can chat with other members of Climate Mirror about approaches and get help for any issues you're having.
 
-#### Getting started
+#### Quick start for advanced users
+
+1. Find an issue for [a dataset with "No Mirrors"](https://github.com/climate-mirror/datasets/issues?q=is%3Aissue+is%3Aopen+label%3A%22No+Mirrors%22)
+2. Issues with "Size Estimated" labels help you to avoid datasets too large for you to store
+3. Check an issue's comments for in progress efforts, move on to another if 2+ people are mirroring already
+3. Comment on the issue to let others know you will be mirroring it
+4. Start downloading, preserving the structure of the original dataset as much as possible
+5. When complete, run `hashdeep -rl $DATASET_DIRECTORY` and save the output along with your mirror
+6. Comment again to indicate that you have a mirror and where to access it
+7. Repeat for another dataset
+
+#### Getting started in depth
+
 The URLs that need mirroring are listed in our [datasets repository](https://github.com/climate-mirror/datasets/issues).
 For those not familiar with using GitHub, each item there is an "issue" - a task that can be tracked. If you click to open each
 one, it will have additional details, and a comment thread to help you coordinate with anyone else working to mirror that
@@ -38,6 +50,10 @@ Datasets can be added to our issues list by anyone, so a URL's existence there d
 or that no other mirrors exist. Once you've identified a dataset you would like to mirror, comment on the issue indicating that you are in the process of
 downloading it. When you are done mirroring it (and have checked your mirror to make sure it's complete), comment again
 to indicate you have a complete mirror, and if it is available at a publicly accessible URL, please provide the URL as well.
+
+To cross verify each other's mirrors, we compare [hash digests](https://en.wikipedia.org/wiki/Cryptographic_hash_function#Verifying_the_integrity_of_files_or_messages) of the files in the mirrors. A popular tool for calculating hash digests for all files in a mirror is `hashdeep`.
+
+We aim to welcome volunteers and help them to help us. If you have questions, ask them on the Slack channel `#general`.
 
 #### Technology
 We currently are not locking anyone to any particular technology. There are many different ways to mirror data, and those
@@ -62,7 +78,12 @@ as Google Drive and Dropbox (make sure you check your terms of service first). I
 find a good storage option.
 
 ## Organizing Data for Other Volunteers
-Triage - making sure all major fields are filled in, adding labels, asking people for clarifications and more information - such as if there’s a missing URL, but they have a public mirror
+Even if you don't have space for a mirror, you can contribute by helping to organize issues. We call this "issue triage" and it is vitally important:
+* making sure all major fields are filled in
+* adding labels
+* asking people for clarifications and more information (e.g. missing URLs for public mirrors)
+* estimating the size of datasets (using tools like `lftp`'s `du` command)
+* identifying duplicate issues (multiple issues reference the same dataset, one issue is a subset of another)
 
 ## Data Verification
 
