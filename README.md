@@ -77,13 +77,17 @@ like Online.net, Scaleway, OVH, and other providers of servers. And still others
 as Google Drive and Dropbox (make sure you check your terms of service first). If you want input, chime in on Slack and people can help you
 find a good storage option.
 
-## Organizing Data for Other Volunteers
+## Issue Triage
+### Organizing Data for Other Volunteers
 Even if you don't have space for a mirror, you can contribute by helping to organize issues. We call this "issue triage" and it is vitally important:
 * making sure all major fields are filled in
 * adding labels
 * asking people for clarifications and more information (e.g. missing URLs for public mirrors)
 * estimating the size of datasets (using tools like `lftp`'s `du` command)
 * identifying duplicate issues (multiple issues reference the same dataset, one issue is a subset of another)
+
+### Searching for External Mirrors
+Often times, the datasets we're mirroring have other hosts at universities and companies around the world. While some of these mirrors may be out of date, knowing they exist can help us prioritize which datasets get mirrored and know if enough copies of a dataset already exist. You can help out by learning a bit more about the datasaet, then searching for mirrors held by groups besides the US government, then commenting on the issue in the tracker with a link to mirrors you find.
 
 ## Data Verification
 
