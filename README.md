@@ -2,6 +2,10 @@
 This guide is designed to give you ways to contribute to Climate Mirror, regardless of your skill level. It is a work in progress - 
 if you have suggestions or updates, feel free to edit it and submit a pull request (a request to incorporate your changes on GitHub)!
 
+In this document:
+1. [Mirroring Data](#mirroring-data)
+2. [Issue Triage](#issue-triage)
+
 ## Mirroring Data
 ### Hosting or attending a DataRefuge Event
 The best way you can help is by attending or hosting a Data Rescue event from our partners at [DataRefuge](http://www.ppehlab.org/datarefuge).
